@@ -9,7 +9,7 @@ class Alice:
         
         m_int = int.from_bytes(message.encode(), "little")
 
-        c = (m_int ** e)% N
+        c = pow(m_int, e, N)
         
         return c
     
